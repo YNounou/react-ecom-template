@@ -3,8 +3,55 @@ import "./HomeProducts.css";
 import tshirt1 from "../../../Assets/Products/t-shirt.jpg";
 import fullClothes1 from "../../../Assets/Products/full-clothes1.jpg";
 import fullClothes2 from "../../../Assets/Products/full-clothes2.jpg";
+import CartIcon from "@material-ui/icons/AddShoppingCart";
 
 function HomeProducts() {
+  var productsApi = [
+    {
+      image: "t-shirt.jpg",
+      title: "Title of product One",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, repudiandae consequuntur voluptatum laboru",
+    },
+    {
+      image: "full-clothes1.jpg",
+      title: "Title of product Two",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, repudiandae consequuntur voluptatum laboru",
+    },
+    {
+      image: "full-clothes2.jpg",
+      title: "Title of product Three",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, repudiandae consequuntur voluptatum laboru",
+    },
+    {
+      image: "t-shirt.jpg",
+      title: "Title of product One",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, repudiandae consequuntur voluptatum laboru",
+    },
+    {
+      image: "full-clothes1.jpg",
+      title: "Title of product Two",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, repudiandae consequuntur voluptatum laboru",
+    },
+    {
+      image: "full-clothes2.jpg",
+      title: "Title of product Three",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, repudiandae consequuntur voluptatum laboru",
+    },
+  ];
+  const [products, setProducts] = useState([]);
+  const [brands, setBrands] = useState([]);
+  const [brand, setBrand] = useState("");
+
+  useEffect(() => {
+    setProducts(productsApi);
+  });
+
   return (
     <div className="homeProduct">
       <div className="homeProduct__items">
@@ -35,9 +82,11 @@ function HomeProducts() {
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
                 quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                repudiandae consequuntur voluptatum laborum numquam blanditiis
-                harum quisquam eius sed odit fugiat iusto
+                repudiandae consequuntur voluptatum laboru
               </p>
+              <span className="homeProduct__cart">
+                <CartIcon />
+              </span>
             </div>
           </a>
         </div>
@@ -51,9 +100,11 @@ function HomeProducts() {
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
                 quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                repudiandae consequuntur voluptatum laborum numquam blanditiis
-                harum quisquam eius sed odit fugiat iusto
+                repudiandae consequuntur voluptatum laboru
               </p>
+              <span className="homeProduct__cart">
+                <CartIcon />
+              </span>
             </div>
           </a>
         </div>
@@ -67,9 +118,11 @@ function HomeProducts() {
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
                 quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                repudiandae consequuntur voluptatum laborum numquam blanditiis
-                harum quisquam eius sed odit fugiat iusto
+                repudiandae consequuntur voluptatum laboru
               </p>
+              <span className="homeProduct__cart">
+                <CartIcon />
+              </span>
             </div>
           </a>
         </div>
@@ -83,9 +136,11 @@ function HomeProducts() {
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
                 quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                repudiandae consequuntur voluptatum laborum numquam blanditiis
-                harum quisquam eius sed odit fugiat iusto
+                repudiandae consequuntur voluptatum laboru
               </p>
+              <span className="homeProduct__cart">
+                <CartIcon />
+              </span>
             </div>
           </a>
         </div>
@@ -99,9 +154,11 @@ function HomeProducts() {
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
                 quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                repudiandae consequuntur voluptatum laborum numquam blanditiis
-                harum quisquam eius sed odit fugiat iusto
+                repudiandae consequuntur voluptatum laboru
               </p>
+              <span className="homeProduct__cart">
+                <CartIcon />
+              </span>
             </div>
           </a>
         </div>
@@ -115,9 +172,11 @@ function HomeProducts() {
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
                 quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                repudiandae consequuntur voluptatum laborum numquam blanditiis
-                harum quisquam eius sed odit fugiat iusto
+                repudiandae consequuntur voluptatum laboru
               </p>
+              <span className="homeProduct__cart">
+                <CartIcon />
+              </span>
             </div>
           </a>
         </div>
@@ -131,9 +190,11 @@ function HomeProducts() {
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
                 quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                repudiandae consequuntur voluptatum laborum numquam blanditiis
-                harum quisquam eius sed odit fugiat iusto
+                repudiandae consequuntur voluptatum laboru
               </p>
+              <span className="homeProduct__cart">
+                <CartIcon />
+              </span>
             </div>
           </a>
         </div>
@@ -147,9 +208,11 @@ function HomeProducts() {
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
                 quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                repudiandae consequuntur voluptatum laborum numquam blanditiis
-                harum quisquam eius sed odit fugiat iusto
+                repudiandae consequuntur voluptatum laboru
               </p>
+              <span className="homeProduct__cart">
+                <CartIcon />
+              </span>
             </div>
           </a>
         </div>
@@ -163,9 +226,11 @@ function HomeProducts() {
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
                 quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                repudiandae consequuntur voluptatum laborum numquam blanditiis
-                harum quisquam eius sed odit fugiat iusto
+                repudiandae consequuntur voluptatum laboru
               </p>
+              <span className="homeProduct__cart">
+                <CartIcon />
+              </span>
             </div>
           </a>
         </div>
